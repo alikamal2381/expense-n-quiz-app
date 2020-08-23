@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import diagram from "../src/diagram1.jpg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Expense Tracker & Quiz App</h1>
+      <p>
+        <strong>
+          Bootcamp 2020 Project 7A: Rebuild the Expense Tracker App and Quiz App
+          with React/TypeScript it should be a Progressive Web App (PWA) with
+          Offline Capability and Push Notifications
+        </strong>
+      </p>
+      <button>Expense Tracker App</button> <button>Quiz App</button>
+      <br />
+      <hr />
+      <h4>Coming Soon!</h4>
+      <img src={diagram} className="App-logo" alt="diagram" />
+      <br />
+      <br />
+      <br />
+      <hr />
+      <h1>Ali Kamal</h1>
+      <p>
+        <strong>Full Stack Developer</strong>
+      </p>
     </div>
   );
 }
