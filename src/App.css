@@ -1,38 +1,151 @@
-.App {
+@import url("https://fonts.google.com/css?family=Source+Sans+Pro:400,600,700");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  /* background: url("images/blobs.png") no-repeat right top #63d6d6; */
+  background: #63d6d6;
+  color: white;
+}
+
+.container {
+  max-width: 1005px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+header {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 180px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  margin: 2em auto 0;
+  max-width: 600px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 1.25em;
   color: white;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  display: flex;
+  flex-flow: column-reverse;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero {
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2em;
+  font-weight: 600;
+  max-width: 500px;
+  line-height: 1.8em;
+  margin: 3em auto;
+}
+.hero p:before {
+  content: "";
+  display: block;
+  width: 120px;
+  border: 2px solid #ffdb37;
+  margin: 1em auto;
+}
+
+.hero a {
+  background: #ae79c4;
+  padding: 1em 3em;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.375em;
+  font-weight: 700;
+}
+
+.hero button {
+  background: #ae79c4;
+  padding: 1em 3em;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.375em;
+  font-weight: 700;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  /* margin: 3em auto 0; */
+  text-align: center;
+  width: 300px;
+}
+
+@media screen and (min-width: 820px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  nav {
+    margin: 0;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul li {
+    list-style: none;
+    padding: 0.5em 2em;
+  }
+  nav ul li a {
+    font-size: 1.375em;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .highlight {
+    border: 3px solid #ffdb37;
+    border-radius: 50%;
+  }
+  main {
+    flex-flow: row;
+  }
+  .hero {
+    text-align: left;
+  }
+  .hero h1 {
+    font-size: 4em;
+  }
+  .hero p:before {
+    margin: 1em 0;
+  }
+  .hero p {
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0 0 3em 0;
+  }
+  .figure img {
+    width: 120%;
   }
 }
