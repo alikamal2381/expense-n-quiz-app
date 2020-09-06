@@ -43,7 +43,6 @@ function App() {
             App with React/TypeScript it should be a Progressive Web App (PWA)
             with Offline Capability and Push Notifications
           </p>
-          <p>Click: {rowId}</p>
           {/* <a href="#">Expense Tracker App</a> <a href="#">Quiz App</a> */}
           <button onClick={clickExpenseTracker}>
             Expense Tracker App
