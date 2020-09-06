@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import main from "../src/images/main1.png";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 import ExpenseTrackerApp from "./components/exp_tracker/ExpenseTracker";
 import QuizApp from "./components/quiz_app/QuizApp";
 
@@ -44,9 +45,7 @@ function App() {
             with Offline Capability and Push Notifications
           </p>
           {/* <a href="#">Expense Tracker App</a> <a href="#">Quiz App</a> */}
-          <button onClick={clickExpenseTracker}>
-            Expense Tracker App
-          </button>{" "}
+          <button onClick={clickExpenseTracker}>Exp. Tracker App</button>{" "}
           <button onClick={clickQuiz}>Quiz App</button>
         </section>
         <div className="device">
@@ -55,6 +54,7 @@ function App() {
           </figure>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
