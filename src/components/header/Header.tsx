@@ -1,5 +1,5 @@
 import React /* useState */ from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+//import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import logo from "../../images/logo3-transparent.png";
 
 const Header: React.FC = () => {
@@ -15,7 +15,6 @@ const Header: React.FC = () => {
             height="150px"
           />
         </div>
-
         <nav>
           <ul>
             <li>
