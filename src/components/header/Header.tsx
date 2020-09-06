@@ -22,13 +22,13 @@ const Header: React.FC = () => {
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">Bootcamp 2020</a>
-            </li>
-            <li>
-              <a href="#">Pricing</a>
+              <a href="#">Panacloud</a>
             </li>
             <li className="highlight">
-              <a href="#">About us</a>
+              <a href="#">Notification</a>
+            </li>
+            <li>
+              <a href="#">About</a>
             </li>
           </ul>
         </nav>

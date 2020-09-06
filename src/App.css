@@ -125,7 +125,7 @@ figure img {
     text-decoration: none;
   }
   .highlight {
-    border: 3px solid #ffdb37;
+    border: 3px solid red;
     border-radius: 50%;
   }
   main {
