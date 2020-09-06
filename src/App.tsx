@@ -45,9 +45,9 @@ function App() {
           </p>
           <p>Click: {rowId}</p>
           {/* <a href="#">Expense Tracker App</a> <a href="#">Quiz App</a> */}
-          {/*    <button onClick={() => setRowId(1)}>Expense Tracker App</button>{" "}
-          <button onClick={() => setRowId(2)}>Quiz App</button> */}
-          <button onClick={clickExpenseTracker}>Expense Tracker App</button>{" "}
+          <button onClick={clickExpenseTracker}>
+            Expense Tracker App
+          </button>{" "}
           <button onClick={clickQuiz}>Quiz App</button>
         </section>
         <div className="device">
