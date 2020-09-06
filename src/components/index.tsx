@@ -1,3 +1,3 @@
-import ExpenseTrackerApp from "./exp_tracker/exp_tracker";
-import QuizApp from "./quiz_app/quiz_app";
+import ExpenseTrackerApp from "./exp_tracker/ExpenseTracker";
+import QuizApp from "./quiz_app/QuizApp";
 export { ExpenseTrackerApp, QuizApp };

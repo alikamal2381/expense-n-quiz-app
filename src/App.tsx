@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import logo from "../src/images/logo3-transparent.png";
 import main from "../src/images/main1.png";
 //import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ExpenseTrackerApp from "./components/exp_tracker/exp_tracker";
-import QuizApp from "./components/quiz_app/quiz_app";
+import Header from "./components/header/Header";
+import ExpenseTrackerApp from "./components/exp_tracker/ExpenseTracker";
+import QuizApp from "./components/quiz_app/QuizApp";
 
 function App() {
   function clickExpenseTracker() {
@@ -16,34 +16,7 @@ function App() {
 
   return (
     <div>
-      <header className="container">
-        <div className="logo">
-          <img
-            src={logo}
-            className="App-logo"
-            alt="diagram"
-            width="150px"
-            height="150px"
-          />
-        </div>
-
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Bootcamp 2020</a>
-            </li>
-            <li>
-              <a href="#">Pricing</a>
-            </li>
-            <li className="highlight">
-              <a href="#">About us</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <main className="container">
         <section className="hero container">
           <h1>Expense Tracker & Quiz App</h1>
